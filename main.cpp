@@ -1,13 +1,13 @@
 /*
-------------
-Introduction
-------------
+--------------------------------------------------------------------
+                            Introduction
+--------------------------------------------------------------------
 
 This is a tutorial, implementation, and demonstration showing how to
-        generate random numbers in C++.
+generate random numbers in C++.
 
 To be random means to be unpredictable. Therefore, a random number
-        should be an unpredictable number. However, since computers are among
+should be an unpredictable number. However, since computers are among
 the most predictable devices ever invented by humans, it will be
 difficult to get a computer to create a truly random number. For this
 reason, we will satisfy ourselves with getting the computer to create
@@ -15,8 +15,8 @@ so-called "pseudo random numbers", where "pseudo" essentially means
 "not genuine", or to put it more bluntly, "fake". Most programming
 languages have a Pseudo Random Number Generator (PRNG) for this
 purpose. If we knew enough about exactly how the PRNG worked, we could
-        predict the pseudo random numbers it generates. However, in practice,
-        we don't take the time and expense to discover this, making the pseudo
+predict the pseudo random numbers it generates. However, in practice,
+we don't take the time and expense to discover this, making the pseudo
 random numbers good enough for our purposes. (If we needed random
 numbers for a more serious purpose, for example to generate passwords
 or implement encryption, we'd need a more sophisticated process than
@@ -36,9 +36,9 @@ random number. It does this by performing a series of complicated and
 obscure mathematical operations. We can think of rand() essentially as
 a black box, like this:
 
-+------+
-| rand |---> a random number
-+------+
+                          +------+
+                          | rand |---> a random number
+                          +------+
 
 The PRNG needs a value as an input for its mathematical operations,
 called the random number generator seed:
